@@ -1,2 +1,3 @@
 # python-workshop
-learing pyhon  using pycharm
+Learning python using Pycharm IDE.
+
