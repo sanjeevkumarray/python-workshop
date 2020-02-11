@@ -1,0 +1,82 @@
+     // Dictonary
+// question 1:
+
+dic1={1:10, 2:20}
+dic2={3:30, 4:40}
+dic3={5:50,6:60}
+dic4 = {}
+for d in (dic1, dic2, dic3):dic4.update(d)
+print (dic4)
+
+//question 2:
+
+d=dict()
+for x in range(1,16):
+    d[x]=x**2
+print(d)  
+
+//question 3:
+
+dic1 = {1: 10, 2: 20}
+dic2 = {3: 30, 4: 40}
+dic3 = {5: 50, 6: 60}
+dic4 = {}
+for d in (dic1, dic2, dic3): dic4.update(d)
+print(dic4)  
+
+
+     //sets 
+   
+   //Question 1: 
+   
+   setx = set(["apple", "orange"])
+sety = set(["blue", "apple"])
+setz = setx & sety
+print(setz)
+
+//Question 2:
+setx = set(["orange", "mango"])
+sety = set(["mango", "apple"])
+setz = setx | sety
+print(setz)
+
+//question 3:
+
+seta = set(["Apple", "Orange"])
+setb = seta.copy()
+print(setb)
+setb.clear()
+print(setb)
+
+//question 4:
+seta = set(["apple", "mango"])
+setb = set(["mango", "orange"])
+setc = set(["mango"])
+issubset = seta <= setb
+print(issubset)
+issuperset = seta >= setb
+print(issuperset)
+issubset = setc <= setb
+print(issubset)
+issuperset = setb >= setc
+print(issuperset)
+
+//question 5:
+
+setx = set(["apple", "mango"])
+sety = set(["mango", "orange"])
+setz = setx & sety
+print(setz)
+
+setj = setx - setz
+print(setj)
+
+//Question 6:
+
+seta = set(["mango", "apple"])
+setb = set(["apple", "orange"])
+
+setc = seta ^ setb
+print(setc)
+
+
