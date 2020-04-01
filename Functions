@@ -17,3 +17,117 @@ def add_num(a,b):
 num1=57  
 num2=59
 print("The sum is",add_num(num1,num2))#call the function
+
+
+
+//Q.3:
+def factorial(num):
+    fact=1
+    for i in range(1, num+1):
+        fact=fact*i
+    return fact
+number=int(input("Please enter any number to find factorial: "))
+result=factorial(number)
+print("The factorial of %d = %d"%(number,result))
+
+
+//Q.4:
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = int(input("How many terms? "))
+
+if nterms <= 0:
+   print("Plese enter a positive integer")
+else:
+   print("Fibonacci sequence:")
+   for i in range(nterms):
+       print(recur_fibo(i))
+       
+//Q.5:
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+
+
+temp = x
+x = y
+y = temp
+
+print("Value of x is %d" %x)
+print("Value of y is %d" %y)
+
+//Q.6:
+def hcf(x, y):
+    if x > y:
+        smaller = y
+    else:
+        smaller = x
+    for i in range(1, smaller + 1):
+        if ((x % i == 0) and (y % i == 0)):
+            hcf = i
+    return hcf
+
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+print("The H.C.F. of", num1, "and", num2, "is", hcf(num1, num2))
+
+//Q.7:
+num = int(input("Enter ASCII value: "))
+print(chr(num))
+
+num2 = 70
+print(chr(num2))
+
+//Q.8:
+import math
+a = 2.3
+print ("The ceil of 2.3 is : ", end="")
+print (math.ceil(a)) 
+print ("The floor of 2.3 is : ", end="")
+print (math.floor(a))
+
+//Q.9:
+import time;
+
+ticks = time.time()
+print "Number of ticks since 12:00am, January 1, 1970:", ticks
+
+
+//Q.10;
+def greet(name,msg):
+   """This function greets to
+   the person with the provided message"""
+   print("Hello",name + ', ' + msg)
+
+greet("Hi","Good morning")
+
+//Q.11:
+def print_name(name1, name2):
+  """ This function prints the name """
+  print (name1 + " and " + name2 + " are friends")
+
+print_name(name2 = 'John',name1 = 'Gary')
+//Q.12:
+def sum(a=4, b=2):
+  """ This function will print sum of two numbers
+      if the arguments are not supplied
+      it will add the default value """
+  print (a+b)
+
+sum(1,2)
+sum( )
+
+//Q.13:
+def display(*name, **address):
+  for items in name:
+    print (items)
+
+  for items in address.items():
+    print (items)
+
+display('john','Mary','Nina',John='LA',Mary='NY',Nina='DC')
+
