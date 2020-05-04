@@ -1,0 +1,89 @@
+//Q.1:
+class Animal:
+     aleg="black"
+     def leg(self):
+          print("The colour of animal leg is ", self.aleg )
+
+class Dog(Animal):
+      def call_leg(self):
+          self.leg()
+          self.leg() ="Yellow"
+          print("Tiger Leg color is",self.aleg )
+
+class Tiger(Dog):
+    def call_dog(self):
+        self.call_leg()
+
+        obj=Tiger ()
+        obj.call_dog()
+        
+        
+        
+        // Q.2:
+        class Employee:
+    engg ="This is Engineering"
+    manager="This is Manager"
+
+class Engineer(Employee):
+    def printDesign(self):
+        print(self.engg)
+
+class Manager(Engineer):
+    def printDesign(self):
+        Engineer .printDesign(self )
+        print(self.manager )
+
+        obj =Manager () 
+        obj.printDesign()
+        
+        //Q.3:
+        class abc:
+    p=1
+    q=2
+    def abcfun(self):
+        ptint("value of a attribute is", self .p)
+        print("value of b attribute is", self .b)
+
+        print(The Class Name is abc)
+        obj=abc()
+        obj.abcfun();
+        
+        
+        //Q.4:
+        
+            class Employee:
+        engg = "This is Engineering"
+        manager = "This is Manager"
+
+    class Engineer(Employee):
+        def printDesign(self):
+            print(self.engg)
+
+    class Manager(Engineer):
+        def printDesign(self):
+            print("Manager class inherit  the  Employee class and Engineer")
+            Engineer.printDesign(self)
+            print(self.manager)
+
+            obj = Manager()
+            obj.printDesign()
+            
+            //Q.5:
+            
+            
+            class  A:
+    def  m(self):
+        print("In  A")
+
+        class B(A)
+            def m(self):
+                print("In  B")
+
+                class C (A)
+                    def m(self):
+                        print("In c")
+
+                        class D(B ,C)
+                            pass
+                        obj=D()
+                        obj.m()
